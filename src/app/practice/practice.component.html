@@ -1,0 +1,11 @@
+
+<button class="btn btn-primary" (click)="onClick($event)" >Display Details</button>
+<p *ngIf="toggleState" class="banner">
+  Paragraph Data
+</p>
+
+<div *ngFor="let log of logHistory; let idx  = index"
+     [ngClass]="{'text-white' : idx >=4 }"
+     [ngStyle]="{backgroundColor : idx >= 4 ? 'blue' : 'transparent' }">
+  {{log}}
+</div>

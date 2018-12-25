@@ -1,0 +1,4 @@
+<app-successalert></app-successalert>
+<h3>I'm Server Component</h3>
+<p [ngStyle]="{backgroundColor : getColor()}">Server '{{ serverName}}' with ID <b>{{serverId }}</b> is {{ getServerStatus() }} now.</p>
+<p [ngClass]="{ online: serverStatus === 'online'}">Server '{{ serverName}}' with ID <b>{{serverId }}</b> is {{ getServerStatus() }} now.</p>
